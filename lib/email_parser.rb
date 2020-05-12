@@ -14,7 +14,7 @@ class EmailAddressParser
  
   def parse
     email_array = self.emails
-    email_array.split(%r{,\s*}).uniq
+    email_array.splitsplit(/, | /).uniq
     
   end
   
